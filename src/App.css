@@ -36,17 +36,3 @@
     transform: rotate(360deg);
   }
 }
-
-.footer-container {
-    position:absolute;
-    left:0;
-    bottom:0;
-    right:0;
-    padding: 3rem 0 2rem 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: #222222;
-  }
