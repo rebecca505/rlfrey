@@ -1,4 +1,4 @@
-import { Button, Group, Container, Link } from "@chakra-ui/react";
+import { Group, Button, Container, Link } from "@chakra-ui/react";
 import { AiFillLinkedin, AiFillGithub, AiOutlineMail } from "react-icons/ai";
 
 
