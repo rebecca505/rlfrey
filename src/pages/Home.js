@@ -45,7 +45,7 @@ export default function Home() {
           <AbsoluteCenter  axis="both">
             <Grid templateRows="repeat(2, 1fr)" gap={10}>
               <Button onClick={() => navigate("/projects")}>My Projects</Button>
-              <Button onClick={() => navigate("/classes")}>My Classes</Button>
+              {/* <Button onClick={() => navigate("/classes")}>My Classes</Button> */}
             </Grid>
             </AbsoluteCenter> 
           </Box>

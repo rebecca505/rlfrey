@@ -15,9 +15,9 @@ export default function Navbar() {
         <Tabs.Trigger value="projects" onClick={() => navigate("/projects")}>
           Projects
         </Tabs.Trigger>
-        <Tabs.Trigger value="classes" onClick={() => navigate("/classes")}>
+        {/* <Tabs.Trigger value="classes" onClick={() => navigate("/classes")}>
           Classes
-        </Tabs.Trigger>
+        </Tabs.Trigger> */}
       </Tabs.List>
     </Tabs.Root>
   );

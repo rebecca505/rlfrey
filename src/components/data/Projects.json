@@ -4,8 +4,8 @@
         "title": "Whats Cookin",
         "description": "A dining hall recommendation tool that provides real time information based on the menu items published and user preferences. It tracks meal swipes, point balances, open dining halls, and allows users to update their favorites on a profile page.",
         "author": "Rebecca Frey, Arya Sinha, Shirley Deng, Angela Bai",
-        "logo": "/images/whatscookin.png",
-        "view": "/images/whatscookin.png",
+        "logo": "images/whatscookin.png",
+        "view": "images/whatscookin.png",
         "code": "https://github.com/rebecca505/whatscookin",
         "class": "Hackathon",
         "tag": "'Best Beginner Hack' Winner"
