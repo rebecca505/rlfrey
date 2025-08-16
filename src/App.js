@@ -10,13 +10,16 @@ function App() {
   return (
     <Provider>
     <Router>
+      <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
       <Navbar />
+      <div style={{ flex: 1 }}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/classes" element={<Classes />} />
-        </Routes>
+        </Routes></div>
         <Footer />
+        </div>
       </Router>
       </Provider>
   );

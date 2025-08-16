@@ -7,7 +7,7 @@ export default function Projects() {
   return (
     <div>
       <Box position="relative" w="100%" h="100px" ><AbsoluteCenter axis="both"><Text textStyle="2xl">{selectedClass}</Text></AbsoluteCenter></Box>
-
+      
       <SimpleGrid px="20px" gap="20px" minChildWidth="350px">
         {Proj.map(proj =>
           selectedClass === 'All' || proj.class === selectedClass ? (
