@@ -2,41 +2,45 @@
     {
         "id": 1,
         "title": "Whats Cookin",
-        "description": "pull from github",
-        "author": "Reb, Ary, Shir, Ang",
+        "description": "A dining hall recommendation tool that provides real time information based on the menu items published and user preferences. It tracks meal swipes, point balances, open dining halls, and allows users to update their favorites on a profile page.",
+        "author": "Rebecca Frey, Arya Sinha, Shirley Deng, Angela Bai",
         "logo": "/images/whatscookin.png",
         "view": "/images/whatscookin.png",
         "code": "https://github.com/rebecca505/whatscookin",
-        "class": "Hackathon"
+        "class": "Hackathon",
+        "tag": "'Best Beginner Hack' Winner"
     },
     {
         "id": 2,
         "title": "Found in Translation",
-        "description": "pull from gitull from gitull from gitull from gitull from gitull from gitull from gitull from gitull from gitull from gitull from gitull from gitull from gitull from gitull from gitull from gitull from github",
-        "author": "Rebe, Ary, Shir, Ang",
-        "logo": "/images/whatscookin.png",
+        "description": "A language learning tool that reinforces vocabulary from everyday web browsing through conversational practice. A Chrome extension detects highlighted text, translates it, and lets users save terms to practice with an AI chatbot via a companion web app.",
+        "author": "Rebecca Frey, Arya Sinha, Shirley Deng, Angela Bai",
+        "logo": "/images/foundintranslation.png",
         "view": "/images/whatscookin.png",
         "code": "https://github.com/rebecca505/foundintranslation",
-        "class": "Personal"
+        "class": "Hackathon",
+        "tag": ""
     },
     {
-        "id": 1,
-        "title": "Whats Cookin",
-        "description": "pull from github",
-        "author": "Reb, Ary, Shir, Ang",
-        "logo": "/images/whatscookin.png",
+        "id": 3,
+        "title": "Broadway Checker",
+        "description": "Receive a daily Slack notification of new Broadway shows and their discounts, automatically detected by scraping the BwayRush website. The project identifies previously unlogged deals and updates a local file to ensure the user is only alerted to fresh discounts.",
+        "author": "Rebecca Frey",
+        "logo": "/images/bwaychecker.png",
         "view": "/images/whatscookin.png",
-        "code": "https://github.com/rebecca505/whatscookin",
-        "class": "Hackathon"
+        "code": "https://github.com/rebecca505/bway_discounts_scraper",
+        "class": "Personal",
+        "tag": ""
     },
     {
-        "id": 2,
-        "title": "Found in Translation",
-        "description": "pull from gitull from gitull from gitull from gitull from gitull from gitull from gitull from gitull from gitull from gitull from gitull from gitull from gitull from gitull from gitull from gitull from github",
-        "author": "Rebe, Ary, Shir, Ang",
-        "logo": "/images/whatscookin.png",
+        "id": 4,
+        "title": "Cybersecurity Project",
+        "description": "Get an interactive lesson on cybersecurity that teaches how to spot phishing emails, explore different types of phishing, and test with a quiz at the end. The site tracks progress, time spent on each section, and quiz results, while providing a visually engaging experience with aesthetic graphics.",
+        "author": "Rebecca Frey, Tori Chou, Annabelle McLean, Mimansa Kant",
+        "logo": "/images/cybersecure.png",
         "view": "/images/whatscookin.png",
-        "code": "https://github.com/rebecca505/foundintranslation",
-        "class": "Personal"
+        "code": "https://github.com/rebecca505/ui-cybersecurity-project",
+        "class": "Class",
+        "tag": ""
     }
 ]
