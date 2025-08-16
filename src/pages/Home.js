@@ -1,10 +1,18 @@
-import { Grid, Box, AbsoluteCenter, Button, Tabs } from "@chakra-ui/react";
+import { Grid, Box, AbsoluteCenter, Button, Tabs, useBreakpointValue } from "@chakra-ui/react";
 import Spline from '@splinetool/react-spline';
 import { useNavigate } from "react-router-dom"
-import Navbar from '../components/Navbar';
 
 export default function Home() {
   const navigate = useNavigate()
+  const dynamicHeight = useBreakpointValue({
+    base: "50px",
+    sm: "90px",
+    md: "130px",
+    lg: "180px",
+    xl: "200px",
+    "2xl": "250px",
+  });
+  
   return (
     <div>
       <Box ml="5" mt="2" mb="7">
@@ -15,18 +23,18 @@ export default function Home() {
         as="section"
         position="relative"
         w="100%"
-        h={{ base: "50px", sm: "100px", md: "150px", xl: "200px", "2xl": "250px" }}
+        h={dynamicHeight}
         overflow="hidden"
         bg="transparent"
       >
         <Box position="absolute" top="0" left="0" w="100%">
-          <Spline scene="https://prod.spline.design/mC26st2WiUIQecBw/scene.splinecode" />
+          <Spline alt="Rebecca Frey" scene="https://prod.spline.design/mC26st2WiUIQecBw/scene.splinecode" />
         </Box>
       </Box>
 
       <Grid templateColumns="repeat(2, 1fr)" gap="6">
         <Box ml="5" mt="7">
-          I am a Computer Science and Mathematics student at Barnard College of Columbia University.
+          I am a Computer Science and Mathematics student at Barnard College of Columbia University. Class of 2027.
           <br />
           <br />
           I create projects and tools that turn real-world problems into elegant, usable solutions.
