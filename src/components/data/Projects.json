@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "title": "Whats Cookin",
+        "description": "pull from github",
+        "author": "Reb, Ary, Shir, Ang",
+        "logo": "/images/whatscookin.png",
+        "view": "/images/whatscookin.png",
+        "code": "https://github.com/rebecca505/whatscookin",
+        "class": "Hackathon"
+    },
+    {
+        "id": 2,
+        "title": "Found in Translation",
+        "description": "pull from gitull from gitull from gitull from gitull from gitull from gitull from gitull from gitull from gitull from gitull from gitull from gitull from gitull from gitull from gitull from gitull from github",
+        "author": "Rebe, Ary, Shir, Ang",
+        "logo": "/images/whatscookin.png",
+        "view": "/images/whatscookin.png",
+        "code": "https://github.com/rebecca505/foundintranslation",
+        "class": "Personal"
+    }
+]
