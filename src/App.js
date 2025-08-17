@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Provider } from "./components/ui/provider"
 import Home from './pages/Home';
 import Projects from './pages/Projects';
@@ -9,7 +9,7 @@ import './App.css';
 function App() {
   return (
     <Provider>
-      <BrowserRouter basename='/rlfrey'>
+    <Router>
       <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
       <Navbar />
       <div style={{ flex: 1 }}>
@@ -20,7 +20,7 @@ function App() {
         </Routes></div>
         <Footer />
         </div>
-      </BrowserRouter>
+      </Router>
       </Provider>
   );
 }
