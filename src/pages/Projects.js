@@ -1,47 +1,59 @@
 import { AbsoluteCenter, Box, Button, Card, Image, Text, SimpleGrid, CardHeader, CardBody, CardFooter, Flex, HStack, Separator, Link, Tag } from "@chakra-ui/react";
 import Proj from '../components/data/Projects.json'
 import { AiFillEye, AiOutlineCode } from "react-icons/ai";
+import Spline from "@splinetool/react-spline";
 
 export default function Projects() {
   const selectedClass = 'All';
-  return (
-    <div>
-      <Box position="relative" w="100%" h="100px" ><AbsoluteCenter axis="both"><Text textStyle="2xl">{selectedClass}</Text></AbsoluteCenter></Box>
+  const sortedProj = [...Proj].sort((a, b) => a.title.localeCompare(b.title));
 
-      <SimpleGrid px="20px" gap="20px" minChildWidth="350px">
-        {Proj.map(proj =>
-          selectedClass === 'All' || proj.class === selectedClass ? (
-            <div>
-              <Card.Root key={proj.id} h="100%">
-                <CardHeader>
-                  <Flex gap="5">
-                    <Image w="50px" h="50px" src={proj.logo} borderRadius="lg" />
-                    <Box>
-                      <h1>{proj.title}</h1>
-                      <Text color="gray.400" fontSize="xs"> by {proj.author} </Text>
-                    </Box>
-                  </Flex>
-                  {proj.tag !== "" && (
-                    <Box>
-                      <Tag.Root>
-                        <Tag.Label>{proj.tag}</Tag.Label>
-                      </Tag.Root>
-                    </Box>
-                  )}
-                </CardHeader>
-                <CardBody color="gray.500">
-                  {proj.description}
-                </CardBody>
-                <Separator variant="dotted" size="xs" pt="5" />
-                <CardFooter justifyContent="flex-end">
-                  <HStack gap="2">
-                    {/* <Button variant="ghost" as={Link} href={proj.view}><AiFillEye /> View</Button> */}
-                    <Button variant="ghost" as={Link} href={proj.code}><AiOutlineCode /> Code</Button>
-                  </HStack>
-                </CardFooter>
-              </Card.Root>
-            </div>) : null)}
-      </SimpleGrid>
+  return (
+    <div style={{ position: "relative" }}>
+
+      <Box position="absolute" w="100%" h="100%" zIndex={0}>
+        <Spline alt="Rebecca Frey" scene="https:prod.spline.design/ZA09FN7haCz3VUbt/scene.splinecode" style={{ width: "100%", height: "100%" }} />
+      </Box>
+
+      <Box position="relative" zIndex={1} pointerEvents="none">
+        <Box position="relative" w="100%" h="100px" ><AbsoluteCenter axis="both"><Text textStyle="2xl">{selectedClass}</Text></AbsoluteCenter></Box>
+
+        <SimpleGrid px="20px" gap="20px" minChildWidth="350px">
+          {sortedProj.map(proj =>
+            selectedClass === 'All' || proj.class === selectedClass ? (
+              <div>
+                <Card.Root key={proj.id} h="100%">
+                  <CardHeader>
+                    <Flex gap="5">
+                      <Image w="50px" h="50px" src={proj.logo} borderRadius="lg" />
+                      <Box>
+                        <h1>{proj.title}</h1>
+                        <Text color="gray.400" fontSize="xs"> by {proj.author} </Text>
+                      </Box>
+                    </Flex>
+                    {proj.tag !== "" && (
+                      <Box>
+                        <Tag.Root>
+                          <Tag.Label>{proj.tag}</Tag.Label>
+                        </Tag.Root>
+                      </Box>
+                    )}
+                  </CardHeader>
+                  <CardBody color="gray.500">
+                    {proj.description}
+                  </CardBody>
+                  <Separator variant="dotted" size="xs" pt="5" />
+                  <CardFooter justifyContent="flex-end">
+                    <HStack gap="2">
+                      {proj.view !== "" && (
+                        <Button variant="ghost" as={Link} href={proj.view}><AiFillEye /> View</Button>
+                      )}
+                      <Button variant="ghost" as={Link} href={proj.code}><AiOutlineCode /> Code</Button>
+                    </HStack>
+                  </CardFooter>
+                </Card.Root>
+              </div>) : null)}
+        </SimpleGrid>
+      </Box>
     </div>
   );
 }
