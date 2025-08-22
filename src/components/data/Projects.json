@@ -5,7 +5,7 @@
         "description": "A dining hall recommendation tool that provides real time information based on the menu items published and user preferences. It tracks meal swipes, point balances, open dining halls, and allows users to update their favorites on a profile page.",
         "author": "Rebecca Frey, Arya Sinha, Shirley Deng, Angela Bai",
         "logo": "images/whatscookin.png",
-        "view": "images/whatscookin.png",
+        "view": "",
         "code": "https://github.com/rebecca505/whatscookin",
         "class": "Hackathon",
         "tag": "'Best Beginner Hack' Winner"
@@ -16,7 +16,7 @@
         "description": "A language learning tool that reinforces vocabulary from everyday web browsing through conversational practice. A Chrome extension detects highlighted text, translates it, and lets users save terms to practice with an AI chatbot via a companion web app.",
         "author": "Rebecca Frey, Arya Sinha, Shirley Deng, Angela Bai",
         "logo": "/images/foundintranslation.png",
-        "view": "/images/whatscookin.png",
+        "view": "",
         "code": "https://github.com/rebecca505/foundintranslation",
         "class": "Hackathon",
         "tag": ""
@@ -27,20 +27,31 @@
         "description": "Receive a daily Slack notification of new Broadway shows and their discounts, automatically detected by scraping the BwayRush website. The project identifies previously unlogged deals and updates a local file to ensure the user is only alerted to fresh discounts.",
         "author": "Rebecca Frey",
         "logo": "/images/bwaychecker.png",
-        "view": "/images/whatscookin.png",
-        "code": "https://github.com/rebecca505/bway_discounts_scraper",
+        "view": "https://bway-rush-scraper.onrender.com/",
+        "code": "https://github.com/rebecca505/bway-rush-scraper",
         "class": "Personal",
-        "tag": ""
+        "tag": "Under development"
     },
     {
         "id": 4,
-        "title": "Cybersecurity Project",
+        "title": "Learn Cybersecurity",
         "description": "Get an interactive lesson on cybersecurity that teaches how to spot phishing emails, explore different types of phishing, and test with a quiz at the end. The site tracks progress, time spent on each section, and quiz results, while providing a visually engaging experience with aesthetic graphics.",
         "author": "Rebecca Frey, Tori Chou, Annabelle McLean, Mimansa Kant",
         "logo": "/images/cybersecure.png",
-        "view": "/images/whatscookin.png",
+        "view": "",
         "code": "https://github.com/rebecca505/ui-cybersecurity-project",
         "class": "Class",
+        "tag": ""
+    },
+    {
+        "id": 5,
+        "title": "New Day, New Me",
+        "description": "New Day, New Me is a personal project inspired by my own 2021 New Year's resolution to try something new every week. It’s a deck of weekly activities designed to help people gradually step out of their comfort zones, build new habits, and achieve their resolutions in manageable, bite-sized steps.",
+        "author": "Rebecca Frey",
+        "logo": "/images/newdaynewme.png",
+        "view": "https://react-website-test.onrender.com",
+        "code": "https://github.com/rebecca505/react-website-test",
+        "class": "Personal",
         "tag": ""
     }
 ]
