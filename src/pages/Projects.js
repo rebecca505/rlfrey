@@ -10,11 +10,11 @@ export default function Projects() {
   return (
     <div style={{ position: "relative" }}>
 
-      <Box position="absolute" w="100%" h="100%" zIndex={0}>
+      <Box position="fixed"  w="100%" h="100%" >
         <Spline alt="Rebecca Frey" scene="https:prod.spline.design/ZA09FN7haCz3VUbt/scene.splinecode" style={{ width: "100%", height: "100%" }} />
       </Box>
 
-      <Box position="relative" zIndex={1} pointerEvents="none">
+      <Box position="relative" pointerEvents="none" >
         <Box position="relative" w="100%" h="100px" ><AbsoluteCenter axis="both"><Text textStyle="2xl">{selectedClass}</Text></AbsoluteCenter></Box>
 
         <SimpleGrid px="20px" gap="20px" minChildWidth="350px">
