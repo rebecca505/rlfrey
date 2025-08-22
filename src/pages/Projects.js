@@ -4,12 +4,14 @@ import { AiFillEye, AiOutlineCode } from "react-icons/ai";
 
 export default function Projects() {
   const selectedClass = 'All';
+  const sortedProj = [...Proj].sort((a, b) => a.title.localeCompare(b.title));
+  
   return (
     <div>
       <Box position="relative" w="100%" h="100px" ><AbsoluteCenter axis="both"><Text textStyle="2xl">{selectedClass}</Text></AbsoluteCenter></Box>
 
       <SimpleGrid px="20px" gap="20px" minChildWidth="350px">
-        {Proj.map(proj =>
+        {sortedProj.map(proj =>
           selectedClass === 'All' || proj.class === selectedClass ? (
             <div>
               <Card.Root key={proj.id} h="100%">
@@ -35,7 +37,9 @@ export default function Projects() {
                 <Separator variant="dotted" size="xs" pt="5" />
                 <CardFooter justifyContent="flex-end">
                   <HStack gap="2">
-                    {/* <Button variant="ghost" as={Link} href={proj.view}><AiFillEye /> View</Button> */}
+                    {proj.view !== "" && (
+                      <Button variant="ghost" as={Link} href={proj.view}><AiFillEye /> View</Button>
+                    )}
                     <Button variant="ghost" as={Link} href={proj.code}><AiOutlineCode /> Code</Button>
                   </HStack>
                 </CardFooter>
