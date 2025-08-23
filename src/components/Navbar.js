@@ -7,7 +7,7 @@ export default function Navbar() {
   const currentTab = location.pathname.slice(1) || "home";
 
   return (
-    <Tabs.Root value={currentTab} variant="outline" p="1">
+    <Tabs.Root position="sticky" top="0" value={currentTab} variant="outline" p="1" zIndex= "1000" backgroundColor= "white">
       <Tabs.List>
         <Tabs.Trigger value="home" onClick={() => navigate("/")}>
           Home
@@ -15,9 +15,9 @@ export default function Navbar() {
         <Tabs.Trigger value="projects" onClick={() => navigate("/projects")}>
           Projects
         </Tabs.Trigger>
-        {/* <Tabs.Trigger value="classes" onClick={() => navigate("/classes")}>
+        <Tabs.Trigger value="classes" onClick={() => navigate("/classes")}>
           Classes
-        </Tabs.Trigger> */}
+        </Tabs.Trigger>
       </Tabs.List>
     </Tabs.Root>
   );
