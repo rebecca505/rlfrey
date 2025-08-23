@@ -11,7 +11,7 @@ export default function Projects() {
     <div style={{ position: "relative" }}>
 
       <Box position="fixed"  w="100%" h="100%" >
-        <Spline alt="Rebecca Frey" scene="https:prod.spline.design/ZA09FN7haCz3VUbt/scene.splinecode" style={{ width: "100%", height: "100%" }} />
+        <Spline alt="Rebecca Frey" scene="https://prod.spline.design/ZA09FN7haCz3VUbt/scene.splinecode" style={{ width: "100%", height: "100%" }} />
       </Box>
 
       <Box position="relative" pointerEvents="none" >
