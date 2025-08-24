@@ -11,18 +11,18 @@ export default function Projects() {
   return (
     <div style={{ position: "relative" }}>
 
-      <Box position="fixed"  w="100%" h="100%" >
+      <Box position="fixed"  w="100%" h="100%">
         <Spline alt="Rebecca Frey" scene={splineBg} style={{ width: "100%", height: "100%" }} />
       </Box>
 
-      <Box position="relative" pointerEvents="none" >
+      <Box position="relative" pointerEvents="none">
         <Box position="relative" w="100%" h="100px" ><AbsoluteCenter axis="both"><Text textStyle="2xl">{selectedClass}</Text></AbsoluteCenter></Box>
 
         <SimpleGrid px="20px" gap="20px" minChildWidth="350px">
           {sortedProj.map(proj =>
             selectedClass === 'All' || proj.class === selectedClass ? (
               <div>
-                <Card.Root key={proj.id} h="100%">
+                <Card.Root key={proj.id} h="100%" pointerEvents="auto">
                   <CardHeader>
                     <Flex gap="5">
                       <Image w="50px" h="50px" src={proj.logo} borderRadius="lg" />
