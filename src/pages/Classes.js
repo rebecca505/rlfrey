@@ -7,7 +7,7 @@ export default function Classes() {
   const selectedSem = 'Fall';
   const filteredCourses = Courses.filter(course => course.semester === selectedSem && course.year === selectedYear)
   const sortedCourses = [...filteredCourses].sort((a, b) => a.title.localeCompare(b.title))
-  const numShown = useBreakpointValue({ base: 1, md: 1, lg: 2, xl: 3 });
+  const numShown = useBreakpointValue({ base: 1, sm: 1, md: 2, lg: 2, xl: 3 });
 
   const [start, setStart] = useState(0);
   const mod = (n, m) => ((n % m) + m) % m;
@@ -24,10 +24,11 @@ export default function Classes() {
   return (
     <div>
       <Box position="relative" w="100%" h="100px" ><AbsoluteCenter axis="both"><Text textStyle="2xl">First-Year Fall</Text></AbsoluteCenter></Box>
+      <Box w="100vw">
       <Grid templateColumns="auto 1fr auto">
         <GridItem><Button variant="plain" onClick={clickBack}>BACK</Button></GridItem>
         <GridItem>
-          <SimpleGrid px="20px" gap="20px" minChildWidth="350px">
+          <SimpleGrid px="20px" gap="20px" minChildWidth="200px">
             {sectionedCourses.map(course => (
               <Card.Root key={course.id} h="100%" backgroundImage={`url(${course.img})`} backgroundPosition="center">
                 <CardHeader>{course.title}</CardHeader>
@@ -38,7 +39,7 @@ export default function Classes() {
           </SimpleGrid>
         </GridItem>
         <GridItem><Button variant="plain" onClick={clickNext}>NEXT</Button></GridItem>
-      </Grid>
+      </Grid></Box>
     </div>
   );
 }
