@@ -37,7 +37,6 @@ export default function Classes() {
         </GridItem>
         <GridItem><Button variant="plain" onClick={clickNext}>NEXT</Button></GridItem>
       </Grid>
-      {/* <button onClick={clickNext}>xx</button> */}
     </div>
   );
 }
