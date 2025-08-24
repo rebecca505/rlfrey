@@ -6,7 +6,7 @@ import { useColorModeValue } from "../components/ui/color-mode";
 
 export default function Projects() {
   const selectedClass = 'All';
-  const sortedProj = Proj.filter(proj => proj.class === selectedClass || selectedClass === 'All')
+  const sortedProj = [...Proj].sort((a, b) => a.title.localeCompare(b.title))
   const splineBg = useColorModeValue("https://prod.spline.design/ZA09FN7haCz3VUbt/scene.splinecode", "https://prod.spline.design/o9ovXjiWWrDUSROR/scene.splinecode")
   return (
     <div style={{ position: "relative" }}>
