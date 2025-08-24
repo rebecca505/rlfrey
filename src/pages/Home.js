@@ -1,6 +1,7 @@
 import { Grid, Box, AbsoluteCenter, Button, Tabs, useBreakpointValue } from "@chakra-ui/react";
 import Spline from '@splinetool/react-spline';
 import { useNavigate } from "react-router-dom"
+import { useColorModeValue } from "../components/ui/color-mode";
 
 export default function Home() {
   const navigate = useNavigate()
@@ -12,7 +13,8 @@ export default function Home() {
     xl: "200px",
     "2xl": "250px",
   });
-  
+  const splinebg = useColorModeValue('https://prod.spline.design/mC26st2WiUIQecBw/scene.splinecode', 'https://prod.spline.design/QrfJmR0y04DU0GbM/scene.splinecode')
+
   return (
     <div>
       <Box ml="5" mt="2" mb="7">
@@ -28,7 +30,7 @@ export default function Home() {
         bg="transparent"
       >
         <Box position="absolute" top="0" left="0" w="100%">
-          <Spline alt="Rebecca Frey" scene="https://prod.spline.design/mC26st2WiUIQecBw/scene.splinecode" />
+          <Spline alt="Rebecca Frey" scene={splinebg} />
         </Box>
       </Box>
 
@@ -44,8 +46,8 @@ export default function Home() {
         <Box position="relative"> 
           <AbsoluteCenter  axis="both">
             <Grid templateRows="repeat(2, 1fr)" gap={10}>
-              <Button onClick={() => navigate("/projects")}>My Projects</Button>
-              {/* <Button onClick={() => navigate("/classes")}>My Classes</Button> */}
+              <Button w="120px" onClick={() => navigate("/projects")}>My Projects</Button>
+              <Button onClick={() => navigate("/classes")}>My Classes</Button>
             </Grid>
             </AbsoluteCenter> 
           </Box>

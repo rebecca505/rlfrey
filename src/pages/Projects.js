@@ -2,16 +2,17 @@ import { AbsoluteCenter, Box, Button, Card, Image, Text, SimpleGrid, CardHeader,
 import Proj from '../components/data/Projects.json'
 import { AiFillEye, AiOutlineCode } from "react-icons/ai";
 import Spline from "@splinetool/react-spline";
+import { useColorModeValue } from "../components/ui/color-mode";
 
 export default function Projects() {
   const selectedClass = 'All';
   const sortedProj = [...Proj].sort((a, b) => a.title.localeCompare(b.title));
-
+  const splineBg = useColorModeValue("https://prod.spline.design/ZA09FN7haCz3VUbt/scene.splinecode", "https://prod.spline.design/o9ovXjiWWrDUSROR/scene.splinecode")
   return (
     <div style={{ position: "relative" }}>
 
       <Box position="fixed"  w="100%" h="100%" >
-        <Spline alt="Rebecca Frey" scene="https://prod.spline.design/ZA09FN7haCz3VUbt/scene.splinecode" style={{ width: "100%", height: "100%" }} />
+        <Spline alt="Rebecca Frey" scene={splineBg} style={{ width: "100%", height: "100%" }} />
       </Box>
 
       <Box position="relative" pointerEvents="none" >
