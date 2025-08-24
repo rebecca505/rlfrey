@@ -1,4 +1,4 @@
-import { AbsoluteCenter, Box, Button, Card, CardBody, CardFooter, CardHeader, Container, Grid, GridItem, SimpleGrid, Text } from "@chakra-ui/react";
+import { AbsoluteCenter, Box, Button, Card, CardBody, CardFooter, CardHeader, Grid, GridItem, SimpleGrid, Text, useBreakpointValue } from "@chakra-ui/react";
 import Courses from '../components/data/Classes.json'
 import { useState } from "react";
 
@@ -7,10 +7,11 @@ export default function Classes() {
   const selectedSem = 'Fall';
   const filteredCourses = Courses.filter(course => course.semester === selectedSem && course.year === selectedYear)
   const sortedCourses = [...filteredCourses].sort((a, b) => a.title.localeCompare(b.title))
+  const numShown = useBreakpointValue({ base: 1, md: 1, lg: 2, xl: 3 });
 
   const [start, setStart] = useState(0);
   const mod = (n, m) => ((n % m) + m) % m;
-  const sectionedCourses = Array.from({ length: 3 }, (_, i) => sortedCourses[mod(start + i, sortedCourses.length)]);
+  const sectionedCourses = Array.from({ length: numShown }, (_, i) => sortedCourses[mod(start + i, sortedCourses.length)]);
 
   function clickNext() {
     setStart(prev => prev + 1);
