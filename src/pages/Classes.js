@@ -5,11 +5,12 @@ import { useState } from "react";
 export default function Classes() {
   const selectedYear = 'First';
   const selectedSem = 'Fall';
-  const c = Courses.filter(course => course.semester === selectedSem && course.year === selectedYear)
+  const filteredCourses = Courses.filter(course => course.semester === selectedSem && course.year === selectedYear)
+  const sortedCourses = [...filteredCourses].sort((a, b) => a.title.localeCompare(b.title))
 
-  const [start, setStart] = useState(-2);
+  const [start, setStart] = useState(0);
   const mod = (n, m) => ((n % m) + m) % m;
-  const a = Array.from({ length: 3 }, (_, i) => c[mod(start + i, c.length)]);
+  const sectionedCourses = Array.from({ length: 3 }, (_, i) => sortedCourses[mod(start + i, sortedCourses.length)]);
 
   function clickNext() {
     setStart(prev => prev + 1);
@@ -26,7 +27,7 @@ export default function Classes() {
         <GridItem><Button variant="plain" onClick={clickBack}>BACK</Button></GridItem>
         <GridItem>
           <SimpleGrid px="20px" gap="20px" minChildWidth="350px">
-            {a.map(course => (
+            {sectionedCourses.map(course => (
               <Card.Root key={course.id} h="100%" backgroundImage={`url(${course.img})`} backgroundPosition="center">
                 <CardHeader>{course.title}</CardHeader>
                 <CardBody>{course.description}</CardBody>
