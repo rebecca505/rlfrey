@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "title": "TECH & SOCIETY: GOOD, BAD & OTHER",
+        "subject": "First-Year Seminar",
+        "description": "Computing and information technology has improved our lives in many ways, contributing to significant advances in science and medicine; making it easy and efficient to communicate with people across the world; and enabling online business and recreational activities; and more. However, the same technologies can also have negative impacts, such as the move to a surveillance society and surveillance capitalism; major disruptions in the workforce of the future as automation becomes more widespread; and social media contributing to depression in young people and the weaponization of disinformation. This seminar will explore technical, cultural, legal, and economic factors that can impact how computing technology is used, while raising the question of how to encourage and ensure that these technologies are used for good, while eliminating or mitigating the potential negative impacts.",
+        "year": "First",
+        "semester": "Fall",
+        "img": ""
+    },
+    {
+        "id": 2,
+        "title": "PILATES MAT",
+        "subject": "Physical Education",
+        "description": "A Pilates-based mat exercises class to strengthen core (abs, back and hips) and sculpting techniques for entire body using various equipment. Emphasis on proper breathing and alignment.",
+        "year": "First",
+        "semester": "Fall",
+        "img": ""
+    },
+    {
+        "id": 3,
+        "title": "INTRO TO COMPUTER SCIENCE/PROGRAMMING IN JAVA",
+        "subject": "Computer Science",
+        "description": "A general introduction to computer science for science and engineering students interested in majoring in computer science or engineering. Covers fundamental concepts of computer science, algorithmic problem-solving capabilities, and introductory Java programming skills. Assumes no prior programming background. Columbia University students may receive credit for only one of the following two courses: 1004 or 1005.",
+        "year": "First",
+        "semester": "Fall",
+        "img": ""
+    },
+    {
+        "id": 4,
+        "title": "DATA STRUCTURES IN JAVA",
+        "subject": "Computer Science",
+        "description": "Data types and structures: arrays, stacks, singly and doubly linked lists, queues, trees, sets, and graphs. Programming techniques for processing such structures: sorting and searching, hashing, garbage collection. Storage management. Rudiments of the analysis of algorithms. Taught in Java. Note: Due to significant overlap, students may receive credit for only one of the following three courses: COMS W3134, COMS W3136, COMS W3137.",
+        "year": "First",
+        "semester": "Fall",
+        "img": ""
+    },
+    {
+        "id": 5,
+        "title": "CALCULUS III",
+        "subject": "Mathematics",
+        "description": "Prerequisites: MATH UN1101 or the equivalent Vectors in dimensions 2 and 3, complex numbers and the complex exponential function with applications to differential equations, Cramers rule, vector-valued functions of one variable, scalar-valued functions of several variables, partial derivatives, gradients, surfaces, optimization, the method of Lagrange multipliers. (SC)",
+        "year": "First",
+        "semester": "Fall",
+        "img": ""
+    },
+    {
+        "id": 6,
+        "title": "INTRODUCTION TO COGNITIVE SCIENCE",
+        "subject": "Cognitive Science",
+        "description": "The goal of cognitive science — and of this course — is to understand how the mind works. Trying to understand our own minds is perhaps the most ambitious and exciting (and difficult) project in all of science, and this project requires tools drawn from fields including experimental psychology, computer science and artificial intelligence, linguistics, vision science, philosophy, anthropology, behavioral economics, and several varieties of neuroscience (among others). This course will introduce you to the major tools and theories from these areas, as they relate to the study of the mind. We will employ these perspectives while exploring the nature of mental processes such as perception, reasoning, memory, attention, imagery, language, intelligence, decision-making, morality— and even attraction and love. In sum, this course will expose you to cognitive science, the assumptions on which it rests, and many of the most important and fascinating results obtained so far. ",
+        "year": "First",
+        "semester": "Fall",
+        "img": ""
+    }
+]
